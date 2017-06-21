@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+		<form method="POST" action="add_course.php" novalidate> <!-- Използвам това, за да правя проверката чрез php за required -->
+			<div>
+				<label for="title">Име: </label> 
+				<input type="text" name="title" id="title" required> *
+			</div>
+			<div>
+				<label for="lecturer">Преподавател: </label>
+				<input type="text" name="lecturer" id="lecturer" required /> *
+			</div>
+			<div>
+				<label for="description">Описание: </label>
+				<textarea name="description" id="description" rows="5" cols="40" required></textarea> *
+			</div>
+			<input type="submit" value="Добавяне">
+		</form>
+	</body>
+</html>
